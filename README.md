@@ -37,3 +37,31 @@ The directory structure is the standard layout for the torchvision [`datasets.Im
 ## Training Method
 
 TODO
+
+## Results
+
+ - Results in NAS-Bench-201 search space. We report the accuracies of our methods on three benchmark datasets, namely CIFAR-10, CIFAR-100 and ImageNet-16-120.
+
+| Method | CIFAR-10 | CIFAR-100 | ImageNet-16-120 |
+| :-: | :-: | :-: | :-: |
+| ASE-NAS | 94.23±0.22 | 72.76±0.80 | 46.13±0.67 |
+| ASE-NAS+ | -- | 73.12±0.61 | 46.66±0.52 |
+
+ - Results in MobileNet-like search space. We report the top-1 and top-5 accuracies on ImageNet and the corresponding MAdds.
+ 
+| Method | Top-1 Acc. | Top-5 Acc. | MAdds (M) |
+| :-: | :-: | :-: | :-: |
+| ASE-NAS | 79.9 | 94.8 | 597 |
+| ASE-NAS+ | 80.2 | 94.9 | 582 |
+
+ - Visulizations of our ASE-NAS(+) searched in MobileNet-like search space.
+ 
+<p align="center">
+<img src="assets/ASE-NAS.jpg" alt="ASE-NAS" width="90%" align=center />
+</p>
+<p align="center">ASE-NAS</p>
+
+<p align="center">
+<img src="assets/ASE-NAS-plus.jpg" alt="ASE-NAS" width="90%" align=center />
+</p>
+<p align="center">ASE-NAS+</p>

@@ -45,9 +45,9 @@ We have released our ASE-NAS [pretrained model](https://github.com/chenyaofo/ASE
 You can use the following scripts to load the pretrained models:
 ```
 import torch
-model = torch.hub.load("chenyaofo/ASE-NAS", "ase-nas")
+model = torch.hub.load("chenyaofo/ASE-NAS", "ase_nas")
 ```
-The names of all the available models include `ase-nas` and `ase-nas-plus`.
+The names of all the available models include `ase_nas` and `ase_nas_plus`.
 
 We also provide a out-of-the-box script to evaluate the pretrained models on ImageNet and report the accuracy.
 ```

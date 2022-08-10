@@ -38,6 +38,24 @@ The directory structure is the standard layout for the torchvision [`datasets.Im
 
 TODO
 
+## Pretrained Models
+
+We have released our ASE-NAS [pretrained model](https://github.com/chenyaofo/ASE-NAS/releases/tag/weights) on ImageNet.
+
+You can use the following scripts to load the pretrained models:
+```
+import torch
+model = torch.hub.load("chenyaofo/ASE-NAS", "ase-nas")
+```
+The names of all the available models include `ase-nas` and `ase-nas-plus`.
+
+We also provide a out-of-the-box script to evaluate the pretrained models on ImageNet and report the accuracy.
+```
+python -m entry.eval /path/to/imagenet
+```
+> `CN=true python -m entry.eval /path/to/imagenet` for China mainland users to address networking problem
+
+
 ## Results
 
  - Results in NAS-Bench-201 search space. We report the accuracies of our methods on three benchmark datasets, namely CIFAR-10, CIFAR-100 and ImageNet-16-120.

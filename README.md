@@ -15,28 +15,13 @@ Neural Architecture Search (NAS) aims to automatically find effective architectu
 
 Please install all the requirements in `requirements.txt`.
 
-## Data preparation
-
-Download and extract ImageNet train and val images from http://image-net.org/.
-The directory structure is the standard layout for the torchvision [`datasets.ImageFolder`](https://pytorch.org/docs/stable/torchvision/datasets.html#imagefolder), and the training and validation data is expected to be in the `train` folder and `val` folder respectively:
-
-```
-/path/to/imagenet/
-  train/
-    class1/
-      img1.jpeg
-    class2/
-      img2.jpeg
-  val/
-    class1/
-      img3.jpeg
-    class/2
-      img4.jpeg
-```
-
 ## Training Method
 
-TODO
+Train our ASE-NAS in NAS-Bench-201 search space with the following command:
+
+```
+bash entry/train_nas_201.sh
+```
 
 ## Pretrained Models
 
@@ -55,6 +40,8 @@ python -m entry.eval /path/to/imagenet
 ```
 > `CN=true python -m entry.eval /path/to/imagenet` for China mainland users to address networking problem
 
+>**Data preparation**. Download and extract ImageNet train and val images from http://image-net.org/.
+The directory structure is the standard layout for the torchvision [`datasets.ImageFolder`](https://pytorch.org/docs/stable/torchvision/datasets.html#imagefolder), and the training and validation data is expected to be in the `train` folder and `val` folder respectively.
 
 ## Results
 

@@ -53,7 +53,7 @@ import torch.utils.data.distributed
 import torchvision.transforms as transforms
 import torchvision.datasets as datasets
 
-import core.ase_nas as ase_nas
+import codebase.ase_nas as ase_nas
 
 
 model_names = [

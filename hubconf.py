@@ -1,5 +1,5 @@
 # Optional list of dependencies required by the package
 dependencies = ['torch']
 
-from codebase.ase_nas import ase_nas
-from codebase.ase_nas import ase_nas_plus
+from codebase.dsm_nas import dsm_nas
+from codebase.dsm_nas import dsm_nas_plus

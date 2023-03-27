@@ -53,11 +53,11 @@ import torch.utils.data.distributed
 import torchvision.transforms as transforms
 import torchvision.datasets as datasets
 
-import codebase.ase_nas as ase_nas
+import codebase.dsm_nas as dsm_nas
 
 
 model_names = [
-    'ase_nas', 'ase_nas_plus',
+    'dsm_nas', 'dsm_nas_plus',
 ]
 
 parser = argparse.ArgumentParser(description='PyTorch ImageNet Training')
@@ -151,7 +151,7 @@ def main_worker(gpu, ngpus_per_node, args):
     # global best_acc1
     for model_name in model_names:
         print(f"start to infer {model_name} on ImageNet val set")
-        model = getattr(ase_nas, model_name)()
+        model = getattr(dsm_nas, model_name)()
         model.to(device=device)
 
         criterion = nn.CrossEntropyLoss().cuda(args.gpu)

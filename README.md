@@ -1,4 +1,4 @@
-# Efficient Neural Architecture Search via Dominative Subspace Mining
+# Automated Dominative Subspace Mining for Efficient Neural Architecture Search
 
 ![](https://img.shields.io/badge/-PyTorch%20Implementation-blue.svg?logo=pytorch)
 ![](https://img.shields.io/badge/license-BSD%203%20Clause-blue.svg)
